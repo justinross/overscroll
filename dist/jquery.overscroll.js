@@ -449,7 +449,7 @@
 		flags.drifting = false;
 
 		// only start drag if the user has not explictly banned it.
-		if (dstart.size() && !dstart.is(data.options.cancelOn)) {
+		if (dstart.length && !dstart.is(data.options.cancelOn)) {
 
 			// without this the simple "click" event won't be recognized on touch clients
 			if (!touches) { event.preventDefault(); }
